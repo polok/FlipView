@@ -25,9 +25,9 @@ public class FlipView extends ViewFlipper implements View.OnClickListener {
     private View mBackView;
     private FlipViewChangeListener mFlipViewChangeListener;
 
-    private boolean hasAnimations;
     private boolean mChecked;
 
+    private boolean hasAnimations;
     private long animationDuration;
 
     public FlipView(Context context) {
@@ -40,7 +40,7 @@ public class FlipView extends ViewFlipper implements View.OnClickListener {
     }
 
     private void initView(Context context, AttributeSet attrs) {
-        LayoutInflater.from(context).inflate(R.layout.flipview, this, true);
+        LayoutInflater.from(context).inflate(R.layout.flipview, null);
 
         if (attrs != null) {
             final TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.FlipView);
@@ -58,6 +58,7 @@ public class FlipView extends ViewFlipper implements View.OnClickListener {
                 hasAnimations = a.getBoolean(R.styleable.FlipView_show_animations, false);
                 if (hasAnimations) {
                     animationDuration = (long) a.getInteger(R.styleable.FlipView_animation_duration, ANIMATION_DEFAULT_DURATION);
+
                     this.setInAnimation(context, a.getResourceId(R.styleable.FlipView_fade_in_animation, -1));
                     this.getInAnimation().setDuration(animationDuration);
 
@@ -74,6 +75,11 @@ public class FlipView extends ViewFlipper implements View.OnClickListener {
                 a.recycle();
             }
         }
+    }
+
+    @Override
+    public boolean isInEditMode() {
+        return true;
     }
 
     @Override

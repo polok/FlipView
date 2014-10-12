@@ -14,7 +14,9 @@
         app:is_checked="true"
         app:flip_view_front_layout="@layout/flip_view_front_layout"
         app:flip_view_back_layout="@layout/flip_view_back_layout"
-        app:show_animations="false"
-        app:animation_duration="200" />
+        app:show_animations="true"
+        app:fade_in_animation="@anim/fade_in"
+        app:fade_out_animation="@anim/fade_out"
+        app:animation_duration="2000" />
 
 </LinearLayout>
