@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="flip_view_front_layout" type="layout"/>
+    <item name="flip_view_back_layout" type="layout"/>
+
+</resources>

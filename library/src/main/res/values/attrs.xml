@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FlipView">
+        <!-- FlipView front view layout resource -->
+        <attr name="flip_view_front_layout" format="reference" />
+        <!-- FlipView back view layout resource -->
+        <attr name="flip_view_back_layout" format="reference" />
+        <!-- Is FlipView checked or not by default (default:false) -->
+        <attr name="is_checked" format="boolean" />
+        <!-- Is FlipView animated when changing status (default:false) -->
+        <attr name="show_animations" format="boolean" />
+        <!-- FlipView animation to apply when state goes from "not checked" to "checked" -->
+        <attr name="fade_in_animation" format="reference" />
+        <!-- FlipView animation to apply when state goes from "checked" to "not checked" -->
+        <attr name="fade_out_animation" format="reference" />
+        <!-- FlipView animation duration (default:100ms) -->
+        <attr name="animation_duration" format="integer" />
+    </declare-styleable>
+
+</resources>
