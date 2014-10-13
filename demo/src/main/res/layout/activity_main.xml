@@ -8,8 +8,8 @@
 
     <pl.polak.flipview.FlipView
         android:id="@+id/flip_view_demo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:descendantFocusability="blocksDescendants"
         app:is_checked="true"
         app:flip_view_front_layout="@layout/flip_view_front_layout"

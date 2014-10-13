@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/flip_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <include
         android:id="@+id/include_front"
-        layout="@layout/flip_view_front_layout" />
+        layout="@layout/flip_default_view_front_layout" />
 
     <include
         android:id="@+id/include_back"
-        layout="@layout/flip_view_back_layout" />
+        layout="@layout/flip_default_view_back_layout" />
 
-</ViewFlipper>
+</merge>

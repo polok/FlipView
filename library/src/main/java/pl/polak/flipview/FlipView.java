@@ -40,15 +40,14 @@ public class FlipView extends ViewFlipper implements View.OnClickListener {
     }
 
     private void initView(Context context, AttributeSet attrs) {
-        LayoutInflater.from(context).inflate(R.layout.flipview, null);
+        LayoutInflater.from(context).inflate(R.layout.flipview, this, true);
 
         if (attrs != null) {
             final TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.FlipView);
 
             try {
-
-                mFrontView = LayoutInflater.from(context).inflate(a.getResourceId(R.styleable.FlipView_flip_view_front_layout, -1), this);
-                mBackView = LayoutInflater.from(context).inflate(a.getResourceId(R.styleable.FlipView_flip_view_back_layout, -1), this);
+                setFrontView(a.getResourceId(R.styleable.FlipView_flip_view_front_layout, 0));
+                setBackView(a.getResourceId(R.styleable.FlipView_flip_view_back_layout, -1));
 
                 mChecked = a.getBoolean(R.styleable.FlipView_is_checked, false);
                 if(mChecked) {
@@ -75,6 +74,35 @@ public class FlipView extends ViewFlipper implements View.OnClickListener {
                 a.recycle();
             }
         }
+    }
+
+    public void setFrontView(int layoutResId) {
+        setFrontView(LayoutInflater.from(getContext()).inflate(
+                layoutResId > 0 ? layoutResId : R.layout.flip_default_view_front_layout,
+                null));
+    }
+
+    public void setFrontView(View view) {
+        if (view == null) {
+            throw new IllegalArgumentException("The front view can not be null");
+        }
+
+        this.removeViewAt(FlipViewSide.NOT_CHECKED.ordinal());
+        this.addView(view, FlipViewSide.NOT_CHECKED.ordinal());
+    }
+
+    public void setBackView(int layoutResId) {
+        setBackView(LayoutInflater.from(getContext()).inflate(
+                layoutResId > 0 ? layoutResId : R.layout.flip_default_view_front_layout,
+                null));
+    }
+
+    public void setBackView(View view) {
+        if (view == null) {
+            throw new IllegalArgumentException("The back view can not be null");
+        }
+        this.removeViewAt(FlipViewSide.CHECKED.ordinal());
+        this.addView(view, FlipViewSide.CHECKED.ordinal());
     }
 
     @Override
