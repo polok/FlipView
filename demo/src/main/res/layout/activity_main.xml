@@ -6,17 +6,56 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <pl.polak.flipview.FlipView
+            android:id="@+id/flip_no_animation_view_demo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:descendantFocusability="blocksDescendants"
+            app:is_checked="false"
+            app:flip_view_front_layout="@layout/flip_text_view_front_layout"
+            app:flip_view_back_layout="@layout/flip_text_view_back_layout"
+            app:show_animations="true"
+            app:fade_in_animation="@anim/fade_in"
+            app:fade_out_animation="@anim/fade_out"
+            app:animation_duration="2000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/flip_no_animation_view_demo"
+            android:text="Animations (fade-in/fade-out)"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
     <pl.polak.flipview.FlipView
-        android:id="@+id/flip_view_demo"
+        android:id="@+id/flip_animation_view_demo"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:descendantFocusability="blocksDescendants"
         app:is_checked="true"
-        app:flip_view_front_layout="@layout/flip_view_front_layout"
-        app:flip_view_back_layout="@layout/flip_view_back_layout"
-        app:show_animations="true"
-        app:fade_in_animation="@anim/fade_in"
-        app:fade_out_animation="@anim/fade_out"
-        app:animation_duration="2000" />
+        app:flip_view_front_layout="@layout/flip_text_view_front_layout"
+        app:flip_view_back_layout="@layout/flip_text_view_back_layout"
+        app:show_animations="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/flip_animation_view_demo"
+            android:text="No animation"/>
+
+    </RelativeLayout>
 
 </LinearLayout>

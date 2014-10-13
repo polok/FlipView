@@ -4,7 +4,7 @@
     android:layout_width="100dp"
     android:layout_height="100dp"
     android:orientation="vertical"
-    android:background="@android:color/darker_gray">
+    android:background="@android:color/black">
 
     <TextView
         android:layout_width="match_parent"
@@ -12,6 +12,6 @@
         android:gravity="center"
         android:textColor="@android:color/white"
         android:textStyle="bold"
-        android:text="FRONT"/>
+        android:text="CHECKED"/>
 
 </LinearLayout>
