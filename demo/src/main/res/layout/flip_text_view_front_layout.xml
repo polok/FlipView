@@ -4,7 +4,7 @@
     android:layout_width="100dp"
     android:layout_height="100dp"
     android:orientation="vertical"
-    android:background="@android:color/darker_gray">
+    android:background="#0a7e07">
 
     <TextView
         android:layout_width="match_parent"
