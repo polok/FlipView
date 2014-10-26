@@ -1,4 +1,4 @@
-package pl.polak.flipview;
+package com.github.polok.flipview;
 
 import android.content.Context;
 import android.content.res.TypedArray;

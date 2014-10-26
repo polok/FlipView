@@ -12,7 +12,7 @@ USAGE
 ------
 
 ```xml
-    <pl.polak.flipview.FlipView
+    <com.github.polok.flipview.FlipView
         android:id="@+id/flip_animation_view_demo"
         android:layout_width="100dp"
         android:layout_height="100dp"
