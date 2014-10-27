@@ -15,7 +15,7 @@ GRADLE
 dependencies {
     compile 'com.github.polok.flipview:library:1.0.0'
 }
-```xml
+```
 
 USAGE
 ------
