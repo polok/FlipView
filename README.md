@@ -8,6 +8,15 @@ ABOUT
 If you have a need to have a UI component which will act similar to toggle button or be like a view group with state checked/unchecked this is a right place for you.
 
 
+GRADLE
+------
+
+```xml
+dependencies {
+    compile 'com.github.polok.flipview:library:1.0.0'
+}
+```xml
+
 USAGE
 ------
 
