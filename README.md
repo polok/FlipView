@@ -22,26 +22,26 @@ Customization
 
 ```xml
 
-        <!-- FlipView front view layout resource -->
-        app:flip_view_front_layout="" [format="reference"]
+   <!-- FlipView front view layout resource -->
+   app:flip_view_front_layout="" [format="reference"]
 
-        <!-- FlipView back view layout resource -->
-        app:flip_view_back_layout="" [format="reference"]
+   <!-- FlipView back view layout resource -->
+   app:flip_view_back_layout="" [format="reference"]
 
-        <!-- Is FlipView checked or not by default-->
-        app:is_checked="" [format="boolean"] (default:false)
+   <!-- Is FlipView checked or not by default-->
+   app:is_checked="" [format="boolean"] (default:false)
 
-        <!-- Is FlipView animated when changing status -->
-        app:"show_animations="" [format="boolean"] (default:false)
+   <!-- Is FlipView animated when changing status -->
+   app:"show_animations="" [format="boolean"] (default:false)
 
-        <!-- FlipView animation to apply when state goes from "not checked" to "checked" -->
-        app:fade_in_animation="" [format="reference"]
+   <!-- FlipView animation to apply when state goes from "not checked" to "checked" -->
+   app:fade_in_animation="" [format="reference"]
 
-        <!-- FlipView animation to apply when state goes from "checked" to "not checked" -->
-        app:fade_out_animation="" [format="reference"]
+   <!-- FlipView animation to apply when state goes from "checked" to "not checked" -->
+   app:fade_out_animation="" [format="reference"]
 
-        <!-- FlipView animation duration -->
-        app:animation_duration="" [format="integer"] (default:100ms)
+   <!-- FlipView animation duration -->
+   app:animation_duration="" [format="integer"] (default:100ms)
 ```
 
 USAGE
