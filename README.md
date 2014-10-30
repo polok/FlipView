@@ -1,11 +1,14 @@
 FlipView
 ========
-Android state viewgroup - FlipView UI library
+Android custom state View Group - FlipView UI library
 
 ABOUT
 ------
 
 If you have a need to have a UI component which will act similar to toggle button or be like a view group with state checked/unchecked this is a right place for you.
+
+
+![image](art/flip_view_demo.gif)
 
 
 GRADLE
