@@ -2,9 +2,11 @@ FlipView
 ========
 Android custom state View Group - FlipView UI library
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-FlipView-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/1073)
+
+
 ABOUT
 ------
-
 If you have a need to have a UI component which will act similar to toggle button or be like a view group with state checked/unchecked this is a right place for you.
 
 
