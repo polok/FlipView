@@ -18,7 +18,7 @@ GRADLE
 
 ```xml
 dependencies {
-    compile 'com.github.polok.flipview:library:1.0.0'
+    compile 'com.github.polok.flipview:library:1.0.1'
 }
 ```
 
@@ -85,6 +85,10 @@ API
 Developed By
 ------------
 Marcin Polak - mpolak87(at).gmail.com
+
+### Changelog
+
+- **2015-12-08** - `1.0.1` - Removed redundant ic_launcher icon and tools version update
 
 License
 ----------
